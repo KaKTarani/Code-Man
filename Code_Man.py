@@ -1,4 +1,6 @@
-
+#fuck in
+#code by Code-Man
+#user Code_Man
 from os import path
 import os,base64,zlib,pip,urllib
 os.system('xdg-open https://www.snapchat.com/add/korshtarani?share_id=28NhQ1En0Y4&locale=en-GB')
