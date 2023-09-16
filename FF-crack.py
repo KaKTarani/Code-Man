@@ -275,7 +275,7 @@ def o():
             pwx = []
             uid = love
             pwww = love[3:14]
-            for Eman in HamiiID		
+            for Eman in HamiiID:		
                 pwx.append(pwww)
                 pwx.append(Eman)
                 pwx.append('hama123')
