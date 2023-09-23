@@ -66,6 +66,28 @@ header_grup = {"user-agent": "Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QK
 bulan_ttl = {"01": "January", "02": "February", "03": "March", "04": "April", "05": "May", "06": "June", "07": "July", "08": "Augustus", "09": "September", "10": "October", "11": "November", "12": "December"}
 done = False
 
+def sasuke():
+    import os
+    try:
+        import requests
+    except ImportError:
+        os.system('pip install requests')
+    import os, requests
+    
+    uuid = str(os.geteuid()) + str(os.getlogin()) 
+    id = "<>".join(uuid)
+    print("\n\n\x1b[37;1m  YOUR ID : \033[94m"+id)
+    try:
+        url = requests.get("https://pastebin.com/raw/hhDAKcAM").text
+    except requests.exceptions.ConnectionError:
+        print('No Internet Connection')
+    if id in url:
+        print("\033[92m  YOUR ID IS ACTIVE.........\033[97m")
+    elif id not in url:
+        print('\033[0;91mYour Id Not Activate Send Chat To @KakTarani')
+        exit()
+      
+sasuke()
 def jalan(z):
     for e in z + '\n':
         sys.stdout.write(e)
