@@ -23,6 +23,29 @@ print('\033[97;1m[\033[92;1m+\033[97;1m] \033[0;92mChecking Update...? ')
 time.sleep(5)
 os.system('clear')
 print("\033[97;1m[\033[92;1m+\033[97;1m] \033[0;92mChaware Bka")
+#------------------[ I'd Activi]-------------------#
+def sasuke():
+    import os
+    try:
+        import requests
+    except ImportError:
+        os.system('pip install requests')
+    import os, requests
+    
+    uuid = str(os.geteuid()) + str(os.getlogin()) 
+    id = "<>".join(uuid)
+    print("\n\n\x1b[37;1m  YOUR ID : \033[94m"+id)
+    try:
+        url = requests.get("https://pastebin.com/raw/hhDAKcAM").text
+    except requests.exceptions.ConnectionError:
+        print('No Internet Connection')
+    if id in url:
+        print("\033[92m  YOUR ID IS ACTIVE.........\033[97m")
+    elif id not in url:
+        print('\033[0;91mYour Id Not Activate Send Chat To @KakTarani')
+        exit()
+      
+sasuke()
 #------------------[ KakTarani ]-------------------#
 def cek_apk(session,coki):
     w=session.get("https://m.facebook.com/settings/apps/tabbed/?tab=active",cookies={"cookie":coki}).text
