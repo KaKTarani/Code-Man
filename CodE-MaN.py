@@ -188,13 +188,13 @@ def clear():
 def back():
     login()
 def contact():
-   # os.system('xdg-open https://www.facebook.com/profile.php?id=100088178370283&mibextid=ZbWKwL')
+   # os.system('xdg-open https://www.facebook.com/profile.KakTarani')
     back()
 def linex():
     print('\033[1;37m')
 def animation(u):
     for e in u + "\n":sys.stdout.write(e);sys.stdout.flush();time.sleep(0.01)
-os.system("xdg-open https://www.facebook.com/profile.php?id=100088178370283&mibextid=ZbWKwL")
+os.system("xdg-open https://www.facebook.com/profile.KakTarani")
 #------------------[ LOGO-LAKNAT ]-----------------#
 logo =""" 
 \033[0;92m╔━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╗                           ___   _   _ _____ _____ _   _ 
