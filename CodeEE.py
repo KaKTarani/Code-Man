@@ -226,6 +226,36 @@ def linex():
     print('\033[1;37m')
 def animation(u):
     for e in u + "\n":sys.stdout.write(e);sys.stdout.flush();time.sleep(0.01)
+def shoha_menu(): 
+    UMO="3ala" 
+    uuid = str(os.geteuid()) + str(os.getlogin())  
+    id = "5".join(uuid) 
+    print(logo) 
+    ali=requests.get("").text 
+    if id in ali: 
+        Main() 
+    else: 
+        os.system("clear") 
+        os.system("xdg-open https://t.me/CodeManCarcker") 
+        time.sleep(3.0) 
+         
+        os.system("clear") 
+        print(logo) 
+        print("\t\033[1;32   [\033[1;32m\033[1;32m First Get Approvel\033[00m\033[1;30m]") 
+        print ("") 
+        print("┌━═━═━═━═━━═━═━═━═━═━═━═━━═━═━═━═━═━═━═━━═━═━═━═━═━═━═━┐ \n\033[1;32m│ Note : That is Paid because 100% ok id just now login│\033[1;32m\n└━═━═━═━═━━═━═━═━═━═━═━═━━═━═━═━═━═━═━═━━═━═━═━═━═━═━═━┘") 
+        print ("") 
+        print("                Your Key is Not Approved ") 
+        print("               Copy And Send Key To Admin") 
+        print ("") 
+        print (" Your Key : "+UMO+id) 
+        print ("\n") 
+        name = input(" Your Name : ") 
+        print ("") 
+        input(" Press Enter To Send Key") 
+        os.system("xdg-open https://t.me/KakTarani") 
+        shoha_menu()    
+shoha_menu()
 #------------------[ LOGO-LAKNAT ]-----------------#
 logo =""" 
 \033[0;92m╔━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╗                         
@@ -263,36 +293,7 @@ logo ="""
                                                                                                                                                                  
                                                                                                                                                                  
  \033[0;92m╚━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╝               \033[0;92m
-def shoha_menu(): 
-    UMO="3ala" 
-    uuid = str(os.geteuid()) + str(os.getlogin())  
-    id = "5".join(uuid) 
-    print(logo) 
-    ali=requests.get("").text 
-    if id in ali: 
-        Main() 
-    else: 
-        os.system("clear") 
-        os.system("xdg-open https://t.me/CodeManCarcker") 
-        time.sleep(3.0) 
-         
-        os.system("clear") 
-        print(logo) 
-        print("\t\033[1;32   [\033[1;32m\033[1;32m First Get Approvel\033[00m\033[1;30m]") 
-        print ("") 
-        print("┌━═━═━═━═━━═━═━═━═━═━═━═━━═━═━═━═━═━═━═━━═━═━═━═━═━═━═━┐ \n\033[1;32m│ Note : That is Paid because 100% ok id just now login│\033[1;32m\n└━═━═━═━═━━═━═━═━═━═━═━═━━═━═━═━═━═━═━═━━═━═━═━═━═━═━═━┘") 
-        print ("") 
-        print("                Your Key is Not Approved ") 
-        print("               Copy And Send Key To Admin") 
-        print ("") 
-        print (" Your Key : "+UMO+id) 
-        print ("\n") 
-        name = input(" Your Name : ") 
-        print ("") 
-        input(" Press Enter To Send Key") 
-        os.system("xdg-open https://t.me/KakTarani") 
-        shoha_menu()    
-shoha_menu()
+
 ╔━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╗
 ║\33[0;41m        [ WORKING MOBILE DATA AND WIFI ALSO ]         \033[0;92m║
 ╚━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╝
