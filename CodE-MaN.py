@@ -24,7 +24,7 @@ time.sleep(5)
 os.system('clear')
 print("\033[97;1m[\033[92;1m+\033[97;1m] \033[0;92mFOLLOW ADMIN")
 time.sleep(2)
-os.system(f'xdg-open https://www.facebook.com/profile.php?id=100088178370283&mibextid=ZbWKwL')')
+os.system(f'xdg-open https://www.facebook.com/KakTarani')
 #------------------[ KakTarani ]-------------------#
 #------------------[ USER-AGENT ]-------------------#
 ua = ["Mozilla/5.0 (Linux; Android 8.0.0; LLD-AL20) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Mobile Safari/537.36",]
