@@ -271,6 +271,15 @@ def main():
     print(f"{RED}[02] {WHITE}FILE Cracker{GREEN} [   BEST    ]")
     print(f"{RED}[03] {WHITE}FILE CREATE  {GREEN}[NEW METHOD ] ")
     print(f"{RED}[04] {WHITE}FILE CREATE  {GREEN}[ UNLIMITED ]")
+    print(f"{RED}[05] {WHITE}SPRATE LINKS FROM FILE")
+    print(f"{RED}[06] {WHITE}DUBBLE LINK CUTTER")
+    print(f"{RED}[07] {WHITE}DATA PROTECTOR")
+    print(f"{RED}[08] {WHITE}CYTHON CHANGER")
+    print(f"{RED}[09] {WHITE}FACEBOOK BOT")
+    print(f"{RED}[10] {WHITE}MY YOUTUBE CHANNEL")
+    print(f"{RED}[00] {WHITE}EXIT PROGRAM")
+    linex()
+     input("[√] CHOOSE : ")
     print(f"{RED}[00] {WHITE}EXIT PROGRAM")
   
 
