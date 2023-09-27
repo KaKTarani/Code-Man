@@ -285,20 +285,6 @@ def main():
     elif HAMII in ["2","02"]:
         file_crack()
     elif HAMII in ["3","03"]:
-        Filex()
-    elif HAMII in ["4","04"]:
-        File_creating()
-    elif HAMII in ["5","05"]:
-        saprate()
-    elif HAMII in ["6","06"]:
-        remove_dub()
-    elif HAMII in ["7","07"]:
-        PROTECT()
-    elif HAMII in ["8","08"]:
-        CYTHONIZER()
-    elif HAMII in ["9","09"]:
-        BOTX()
-    elif HAMII in ["10","10"]:
         
     elif HAMII in ["0","00"]:
         os.system('rm -rf fb_cookies.txt')
