@@ -290,7 +290,7 @@ def main():
         File_creating()
     elif  in ["5"]
      
-    elif  in ["0"]
+    elif  in ["0"
         os.system('rm -rf fb_cookies.txt')
         exit()
     else:
