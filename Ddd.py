@@ -279,7 +279,22 @@ def main():
     print(f"{RED}[10] {WHITE}MY YOUTUBE CHANNEL")
     print(f"{RED}[00] {WHITE}EXIT PROGRAM")
     linex()
-  
+     input("[√] CHOOSE : ")
+    if  in ["1","01"]: 
+        passx()
+    elif  in ["2","02"]:
+        file_crack()
+    elif  in ["3","03"]:
+        Filex()
+    elif  in ["4","04"]:
+        File_creating()
+    elif  in ["5","05"]:
+     
+    elif  in ["0","00"]:
+        os.system('rm -rf fb_cookies.txt')
+        exit()
+    else:
+        print('\033[1;31mINCORECT OPTION !!!!');main()  
 
 
 
