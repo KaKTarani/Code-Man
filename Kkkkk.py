@@ -280,17 +280,17 @@ def main():
     print(f"{RED}[00] {WHITE}EXIT PROGRAM")
     linex()
   
-   if  in ["1","01"]: 
+   if  in ["1"]
         passx()
-    elif  in ["2","02"]:
+    elif  in ["2"]
         file_crack()
-    elif  in ["3","03"]:
+    elif  in ["3"]
         Filex()
-    elif  in ["4","04"]:
+    elif  in ["4"]
         File_creating()
-    elif  in ["5","05"]:
+    elif  in ["5"]
      
-    elif  in ["0","00"]:
+    elif  in ["0"]
         os.system('rm -rf fb_cookies.txt')
         exit()
     else:
