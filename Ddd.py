@@ -279,8 +279,8 @@ def main():
     print(f"{RED}[10] {WHITE}MY YOUTUBE CHANNEL")
     print(f"{RED}[00] {WHITE}EXIT PROGRAM")
     linex()
-     input("[√] CHOOSE : ")
-    if  in ["1","01"]: 
+  
+   if  in ["1","01"]: 
         passx()
     elif  in ["2","02"]:
         file_crack()
