@@ -280,7 +280,6 @@ def main():
     print(f"{RED}[00] {WHITE}EXIT PROGRAM")
     linex()
      input("[√] CHOOSE : ")
-    print(f"{RED}[00] {WHITE}EXIT PROGRAM")
   
 
 
@@ -289,16 +288,6 @@ def main():
 
 def File_creating():
     os.system(f"git clone https://github.com/HAMII-king-06/DUMP && cd DUMP && python DUMP.py")
-
-def PROTECT():
-    os.system(" rm -rf DATA_PROTECT && git clone https://github.com/Hamii-king-06/DATA_PROTECT && cd DATA_PROTECT && python PROTECTOR.py")
-
-def CYTHONIZER():
-    os.system("rm -rf Cython_Changer && git clone https://github.com/Hamii-king-06/Cython_Changer && cd Cython_Changer && python3 Run.py")
-
-
-def BOTX():
-    os.system("rm -rf BOT && git clone https://github.com/Hamii-king-06/ BOT && cd BOTgit clone https://github.com/Hamii-king-06/ BOT && cd BOT && python3 Hamii.py")
 
 def file_crack():
     global ok,cp,tf
