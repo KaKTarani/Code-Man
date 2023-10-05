@@ -95,7 +95,7 @@ loop = 0
 url_lookup = "https://lookup-id.com/"
 url_mb = "https://m.facebook.com"
 url_ip = "https://www.httpbin.org/ip"
-header_grup = {"user-agent": "Mozilla/5.0 (Linux; Android 4.3; fr-fr; SAMSUNG GT-I9300I Build/JLS36C) AppleWebKit/537.36 (KHTML, like Gecko) Version/1.5 Chrome/28.0.1500.94 Mobile Safari/537.36",
+header_grup = {"Mozilla/5.0 (Linux; Android 4.3; fr-fr; SAMSUNG GT-I9300I Build/JLS36C) AppleWebKit/537.36 (KHTML, like Gecko) Version/1.5 Chrome/28.0.1500.94 Mobile Safari/537.36",
 "Mozilla/5.0 (Linux; U; Android 4.3.1; uk-ua; GT-I9300 Build/JLS36I) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 CyanogenMod/10.2.0/i9300",
 "Mozilla/5.0 (Linux; U; Android 4.3; pl-pl; SAMSUNG GT-I9300/I9300XXUGNA5 Build/JSS15J) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile ",
 "Mozilla/5.0 (Linux; U; Android 4.1.2; en-ph; GT-I9300 Build/JZO54K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",    
