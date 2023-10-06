@@ -183,7 +183,6 @@ def alvino_xy(u):
         for e in u + "\n":sys.stdout.write(e);sys.stdout.flush();time.sleep(0.005)
 def clear():
     os.system('clear')
-def back() 
     back()
 def linex():
     print('\033[1;37m')
