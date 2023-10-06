@@ -196,15 +196,16 @@ os.system("xdg-open https://www.facebook.com/reallive.realnam")
 #------------------[ LOGO-LAKNAT ]-----------------#
 logo =""" 
 \033[0;92m╔━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╗                               
-                                                                                                               
-                                                                                                           
-`7MMF' `YMM'       db      `7MMF' `YMM'MMP""MM""YMM   db      `7MM"""M.q.        db      `7MN.   `7MF'`7MMF'
-  MM   .M'        ;MM:       MM   .M'  P'   MM   `7  ;MM:       MM   `MM.      ;MM:       MMN.    M    MM  
-  MM .d"         ,V^MM.      MM .d"         MM      ,V^MM.      MM   ,M9      ,V^MM.      M YMb   M    MM  
-  MMMMM.        ,M  `MM      MMMMM.         MM     ,M  `MM      MMmmdM9      ,M  `MM      M  `MN. M    MM  
-  MM  VMA       AbmmmqMA     MM  VMA        MM     AbmmmqMA     MM  YM.      AbmmmqMA     M   `MM.M    MM  
-  MM   `MM.    A'     VML    MM   `MM.      MM    A'     VML    MM   `Mb.   A'     VML    M     YMM    MM  
-.JMML.   M.M.b..AMA.   .AMMA..JMML.   M.M.b.  .JMML..AMA.   .AMMA..JMML. .JMM..AMA.   .AMMA..JML.    YM  .JL.                                                                   
+
+__  __   ______  __  __   ______  ______  ____    ______  __  __  ______     
+/\ \/\ \ /\  _  \/\ \/\ \ /\__  _\/\  _  \/\  _`\ /\  _  \/\ \/\ \/\__  _\    
+\ \ \/'/'\ \ \L\ \ \ \/'/'\/_/\ \/\ \ \L\ \ \ \L\ \ \ \L\ \ \ `\\ \/_/\ \/    
+ \ \ , <  \ \  __ \ \ , <    \ \ \ \ \  __ \ \ ,  /\ \  __ \ \ , ` \ \ \ \    
+  \ \ \\`\ \ \ \/\ \ \ \\`\   \ \ \ \ \ \/\ \ \ \\ \\ \ \/\ \ \ \`\ \ \_\ \__ 
+   \ \_\ \_\\ \_\ \_\ \_\ \_\  \ \_\ \ \_\ \_\ \_\ \_\ \_\ \_\ \_\ \_\/\_____\
+    \/_/\/_/ \/_/\/_/\/_/\/_/   \/_/  \/_/\/_/\/_/\/ /\/_/\/_/\/_/\/_/\/_____/
+                                                                              
+                                                                                                                                                
                                                                                                                                                                  
                                                
 \033[0;92m╚━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╝               \033[0;92m
