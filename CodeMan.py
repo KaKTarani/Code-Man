@@ -183,16 +183,10 @@ def alvino_xy(u):
         for e in u + "\n":sys.stdout.write(e);sys.stdout.flush();time.sleep(0.005)
 def clear():
     os.system('clear')
-def back():
-    login()
-def contact():
-   # os.system('xdg-open https://www.facebook.com/reallive.realnam')
-    back()
 def linex():
     print('\033[1;37m')
 def animation(u):
     for e in u + "\n":sys.stdout.write(e);sys.stdout.flush();time.sleep(0.01)
-os.system("xdg-open https://www.facebook.com/reallive.realnam")
 #------------------[ LOGO-LAKNAT ]-----------------#
 logo =""" 
 \033[0;92m╔━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╗                               
