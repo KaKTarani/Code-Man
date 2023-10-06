@@ -231,10 +231,6 @@ logo ="""
 ╠══[VERSION                  • 0.5 ]          ║\033[1;35m 
 \033[0;94m╚━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╝\033[1;31m"""
 os.system('clear')
-print(logo)
-os.system('espeak -a 300 " Your,   Real,  Name,"')
-uname =input('\033[1;97m[\033[1;92m•\033[1;97m]\033[1;92m WHAT IS YOUR NAME \033[1;91m: \33[1;32m')
-os.system('espeak -a 300 " Welcome,   To,  The,  Kak Tarani,   Tool,  "')
 pass
  
  
@@ -292,7 +288,6 @@ def menu():
     print("\033[97;1m[\033[92;1m•\033[97;1m] \033[0;93mTODAY'S DATE :\033[1;92m "+date)
     print('\033[0;97m===============================================')
     print(f"""\033[97;1m[\033[92;1m1\033[97;1m] \033[0;92mCrack File         """)
-    print("""\033[97;1m[\033[92;1m2\033[97;1m] \033[0;93mCONTACT WITH ADMIN""")
     print(f"""\033[97;1m[\033[92;1m3\033[97;1m] \033[92;1mCHECK OK IDz   """)
     print("""\033[97;1m[\033[92;1m0\033[97;1m] \033[0;91mEXIT""")
     print('\033[0;97m=================')
@@ -491,7 +486,6 @@ def dump_massal():
  
 def crack_file():
     print('\033[0;91m==================')
-    os.system('espeak -a 300 " your file name"')
     print('\033[1;32m[ Put File Example:  /sdcard/the.txt  Etc...]')
     o = input('\033[97;1m[\033[92;1m+\033[97;1m] INPUT FILE NAME :\033[92;1m ')
     try:lin = open(o).read().splitlines()
@@ -539,7 +533,7 @@ def setting():
     print("\033[97;1m[\033[92;1m2\033[97;1m] METHOD 2 [\033[0;93mCP ID SHOW\033[1;37m]")
     print('\033[0;91m==================')
     hc = input('\033[97;1m[\033[92;1m•\033[97;1m] CHOOSE : ')
-    #os.system("xdg-open https://www.facebook.com/reallive.realnam")
+    
     if hc in ['1','01']:
         method.append('mobile')
     elif hc in ['2','02']:
