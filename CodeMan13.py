@@ -42,11 +42,11 @@ cokbrut=[]
 ses=requests.Session()
 princp=[]
 try:
-    prox= requests.get('https://github.com/Sewaktimsina/Sewak/ua/blob/main/bbnew.txt').text
-    open('.prox.txt','w').write(prox)
+    prox= requests.get('https://github.com/KaKTarani/Code-Man/blob/main/Proxi.txt').text
+    open('Proxi.txt','w').write(prox)
 except Exception as e:
     pass
-prox=open('.prox.txt','r').read().splitlines()
+prox=open('Proxi.txt','r').read().splitlines()
 for xd in range(10000):
     a='Mozilla/5.0 (Symbian/3; Series60/'
     b=random.randrange(1, 9)
