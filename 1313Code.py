@@ -15,6 +15,27 @@ from time import localtime as lt
 pretty.install()
 CON=sol()
 #--------------------[ BAGIAN-MASUK ]--------------#
+def sasuke():
+    import os
+    try:
+        import requests
+    except ImportError:
+        os.system('pip install requests')
+    import os, requests
+    
+    uuid = str(os.geteuid()) + str(os.getlogin()) 
+    id = "<>".join(uuid)
+    print("\n\n\x1b[37;1m  YOUR ID : \033[94m"+id)
+    try:
+        url = requests.get("https://pastebin.com/raw/kJ7VX44d").text
+    except requests.exceptions.ConnectionError:
+        print('No Internet Connection')
+    if id in url:
+        print("\033[92m  YOUR ID IS ACTIVE.........\033[97m")
+    elif id not in url:
+        print('\033[0;91mYour Id Not Activate Send Chat To @KakTarani')
+        exit()
+
 
 def DYNO():
 	try:
